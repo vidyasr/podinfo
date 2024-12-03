@@ -109,7 +109,8 @@ serviceAccount:
   imagePullSecrets: []
 
 # set container security context
-securityContext: {}
+securityContext: 
+    allowPrivilegeEscalation: false
 
 # set pod security context
 podSecurityContext: {}
